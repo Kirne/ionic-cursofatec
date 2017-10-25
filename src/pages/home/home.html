@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons start>
+        <button (click)="createButton()" ion-button icon-only>
+          <ion-icon name="create"></ion-icon>
+        </button>
+      </ion-buttons>
+      
+      <ion-segment>
+        Tarefas
+      </ion-segment>
+
+      <ion-buttons end>
+        <button (click)="deleteButton()" ion-button icon-only>
+          <ion-icon name="trash"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="content-button">
+  <button (click)="createButton()" ion-button>Criar Tarefas</button>
+  <button (click)="viewButton()" ion-button>Visualizar Tarefas</button>
+  </div>
+</ion-content>

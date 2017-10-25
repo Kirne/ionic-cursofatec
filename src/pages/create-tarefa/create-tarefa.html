@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Criar Tarefa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label stacked>Nome da Tarefa</ion-label>
+          <ion-input [(ngModel)]="task.Name" type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Descrição da Tarefa</ion-label>
+          <ion-input [(ngModel)]="task.Description" type="text" placeholder="Descrição"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <ion-buttons end>
+        <button ion-button icon-only (click)="saveClick()">
+          <ion-icon name="checkmark"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
